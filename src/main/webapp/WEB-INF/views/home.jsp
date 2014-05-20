@@ -2,7 +2,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <html>
 	<head>
-		<title>Spring MVC Starter Application</title>
+		<title>Solar Application</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="<c:url value="/static/resources/css/screen.css"/>"/>
 	</head>
@@ -75,6 +75,11 @@
 							<tr>
 								<td>
 									REST URL for all members: <a href="<c:url value="/members/list"/>">/members/list</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Click <a href="<c:url value="/projects"/>">here</a> to go to Project monitor
 								</td>
 							</tr>
 						</table>
