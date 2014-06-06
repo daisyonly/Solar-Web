@@ -1,12 +1,13 @@
 Solar-Web
 =========
 
-Spring MVC 4, Hibernate 4, JPA 2.1 <br>
+Spring MVC 4, Hibernate 4, JPA 2.1, Tiles3 <br>
 
 <p>Requirements:</P>
 PostgreSQL 9.1<br>
 JDK 1.7<br>
 STS 3.5.1<br>
+Tiles 3<br>
 
 1) Open STS or other IDE, open Git perspective
 2) click "clone a Git repository...", enter https://github.com/hxf0801/Solar-Web.git
