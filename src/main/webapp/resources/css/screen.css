@@ -1,19 +1,52 @@
 /* Core styles for the page */
-body {
-	padding-top: 60px;
-	padding-bottom: 40px;
+.navbar-static-top {
+  margin-bottom:20px;
 }
 
-.sidebar-nav {
-	padding: 20px 0;
-	padding-top: 40px;
-	padding-bottom: 150px;
+i {
+  font-size:16px;
 }
 
+.nav > li > a {
+  color:#787878;
+}
+  
+footer {
+  margin-top:20px;
+  padding-top:20px;
+  padding-bottom:20px;
+  background-color:#efefef;
+}
+
+/* count indicator near icons */
+.nav>li .count {
+  position: absolute;
+  bottom: 12px;
+  right: 6px;
+  font-size: 10px;
+  font-weight: normal;
+  background: rgba(51,200,51,0.55);
+  color: rgba(255,255,255,0.9);
+  line-height: 1em;
+  padding: 2px 4px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* indent 2nd level */
+.list-unstyled li > ul > li {
+   margin-left:10px;
+   padding:8px;
+}
+
+
+/* -----------  form style begin ----------- */
 .form-signin {
-	max-width: 300px;
-	padding: 19px 29px 29px;
-	margin: 0 auto 20px;
+	max-width: 66.7%;
+	padding: 15px;
 	background-color: #fff;
 	border: 1px solid #e5e5e5;
 	-webkit-border-radius: 5px;
@@ -34,78 +67,4 @@ body {
 	margin-bottom: 15px;
 	padding: 7px 9px;
 }
-
-/*  -----  table style  -------  */
-
-
-/*  = Simple Table style (black header, grey/white stripes  */
-
-.simpletablestyle {
-  background-color:#E6E7E8;
-  clear:both;
-  width: 600px;
-}
-
-.simpletablestyle img {
-  border:0px;
-}
-
-.simpletablestyle td {
-  height:2em;
-  padding-left: 6px;
-  font-size:11px;
-  padding:5px 5px;
-}
-
-.simpletablestyle th {
-  font-size:12px;
-  font-weight:normal;
-  padding:0 10px 0 5px;
-  border-bottom:#999999 dotted 1px;
-}
-
-.simpletablestyle thead {
-  height:31px;
-  font-size:10px;
-  font-weight:bold;
-  color:#333333;
-  text-align:left;
-}
-
-.simpletablestyle .header a {
-  color:#94aebd;
-}
-
-.simpletablestype tfoot {
-	height: 20px;
-  font-size: 10px;
-  font-weight: bold;
-  background-color: #EAECEE;
-  text-align: center;
-}
-
-.simpletablestyle tr.header td {
-  padding: 0px 10px 0px 5px;
-}
-
-
-.simpletablestyle .subheader {
-  background-color: #e6e7e8;
-  font-size:10px;
-  font-weight:bold;
-  color:#000000;
-  text-align:left;
-}
-
-/* Using new CSS3 selectors for styling*/
-.simpletablestyle tr:nth-child(odd) {
-  background: #f4f3d9;
-}
-.simpletablestyle tr:nth-child(even) {
-  background: #ffffa2;
-}
-
-.simpletablestyle td a:hover {
-  color:#3883ce;
-  text-decoration:none; 
-}
+/* -----------  form style end ----------- */

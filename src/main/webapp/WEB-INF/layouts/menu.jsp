@@ -1,32 +1,41 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<div class="well">
-	<ul class="nav nav-pills nav-stacked">
-		<li>
-			<label class="label label-important">Home</label>
-		</li>
-		<li>
-			<label class="label label-warning">Project</label>
-			<ul class="list-group">
-				<li class="list-group-item list-group-item-success"><a href="#">Client Detail</a></li>
-				<li class="list-group-item list-group-item-success"><a href="#">Project Detail</a></li>
-				<li class="list-group-item list-group-item-success"><a href="#">Electrical Requirement</a></li>
-				<li class="list-group-item list-group-item-success"><a href="#">Proposal</a></li>
-				<li class="list-group-item list-group-item-success"><a href="#">Status</a></li>
-			</ul>
-		</li>
-		<li>
-			<label class="label label-info">
-				Sync to Server
-			</label>
-		</li>
-		<li>
-			<label class="label label-success">
-				Sync from Server
-			</label>
-		</li>
-	</ul>
-</div>
-<div class="list-group">
-	<a href="<c:url value="/projects"/>" class="list-group-item list-group-item-info">Project Monitor example</a>
-</div>
+<ul class="list-unstyled">
+	<li class="active">
+		<a href="#"><i class="glyphicon"></i>Home</a>
+	</li>
+	<li class="nav-header">
+		<a href="#" data-toggle="collapse" data-target="#userMenu">
+			<h5>
+				Project <i class="glyphicon glyphicon-chevron-down"></i>
+			</h5>
+		</a>
+		<ul class="list-unstyled collapse in" id="userMenu">
+			<li><a href="#"><i class="glyphicon glyphicon-user"></i> Client Detail</a></li>
+			<li><a href="#"><i class="glyphicon glyphicon-cog"></i> Project Detail</a></li>
+			<li><a href="#"><i class="glyphicon glyphicon-cog"></i> Electrical Requirement</a></li>
+			<li><a href="#"><i class="glyphicon glyphicon-comment"></i> Proposal</a></li>
+			<li><a href="#"><i class="glyphicon glyphicon-flag"></i> Status</a></li>
+		</ul>
+	</li>
+
+	<li class="active">
+		<a href="#"><i class="glyphicon"></i>Sync to Server</a>
+	</li>
+	<li class="active">
+		<a href="#"><i class="glyphicon"></i>Sync from Server</a>
+	</li>
+	<hr>
+	<li class="nav-header">
+		<a href="#" data-toggle="collapse" data-target="#menu2">
+			<h5>
+				Examples <i class="glyphicon glyphicon-chevron-right"></i>
+			</h5>
+		</a>
+
+		<ul class="list-unstyled collapse" id="menu2">
+			<li><a href="<c:url value="/projects"/>"><span class="badge badge-info">1</span> Project</a></li>
+			<li><a href="<c:url value="/"/>"><span class="badge badge-info">2</span> Member</a></li>
+		</ul>
+	</li>
+</ul>

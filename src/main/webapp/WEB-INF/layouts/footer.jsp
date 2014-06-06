@@ -1,3 +1,3 @@
-<footer>
-	<p>© Company 2014</p>
+<footer class="text-center">
+	Copyright &copy; 2001-2014. All Rights Reserved.
 </footer>

@@ -1,20 +1,24 @@
-<div class="navbar-inner">
-	<div class="container-fluid">
-		<button type="button" class="btn btn-navbar" data-toggle="collapse"  data-target=".nav-collapse">
-			<span class="icon-bar"></span> 
-			<span class="icon-bar"></span> 
-			<span class="icon-bar"></span>
+<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse"
+			data-target=".navbar-collapse">
+			<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+				class="icon-bar"></span>
 		</button>
-		<a class="brand" href="#">Solar</a>
-		<div class="nav-collapse collapse">
-			<p class="navbar-text pull-right">
-				Logged in as <a href="#" class="navbar-link">Username</a>
-			</p>
-			<ul class="nav">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</div>
+		<a class="navbar-brand" href="#">Solar</a>
+	</div>
+	<div class="navbar-collapse collapse">
+		<ul class="nav navbar-nav navbar-right">
+
+			<li class="dropdown"><a class="dropdown-toggle" role="button"
+				data-toggle="dropdown" href="#"> <i
+					class="glyphicon glyphicon-user"></i> Admin<span class="caret"></span>
+			</a>
+				<ul id="g-account-menu" class="dropdown-menu" role="menu">
+					<li><a href="#">My Profile</a></li>
+				</ul></li>
+			<li><a href="#"><i class="glyphicon glyphicon-lock"></i> Logout</a></li>
+		</ul>
 	</div>
 </div>
+<!-- /container -->
